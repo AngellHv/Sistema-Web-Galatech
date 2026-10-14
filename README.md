@@ -1,29 +1,19 @@
-# GALATECH · Frontend
+# GALATECH
 
-Prototipo responsive del sistema de seguimiento y gestión de reparaciones descrito en el informe del proyecto. Se ejecuta directamente en el navegador y todavía no consume una API ni una base de datos.
+GALATECH es un sistema web para registrar las reparaciones que recibe un servicio técnico y permitir que los clientes consulten cómo va su equipo con un código de seguimiento. Este proyecto corresponde al frontend del sistema, preparado a partir de los wireframes del informe.
 
-La distribución visual sigue los wireframes WF-01 a WF-07: barra superior azul, fondo celeste, formularios y resultados en tarjetas centradas; las pantallas de registro y gestión usan la organización por columnas que muestran las figuras.
+## Para probar la interfaz
 
-## Cómo abrirlo
+Abre `index.html` en el navegador. No hace falta instalar nada.
 
-Abre `index.html` en un navegador moderno. No requiere instalar dependencias ni iniciar un servidor.
+En la pantalla de consulta puedes probar con `RT-000124`, `RT-000123`, `RT-000122` o `RT-000121`. Desde el resultado también puedes ver el historial de estados.
 
-## Recorrido de demostración
+Para entrar como técnico, selecciona **Iniciar sesión técnico**. En esta versión de demostración, el usuario es `tecnico` y la contraseña es `galatech`. Desde el panel puedes revisar los servicios, registrar una reparación o gestionar una existente.
 
-- **WF-01, consulta del cliente:** abre `index.html` y consulta `RT-000124`, `RT-000123`, `RT-000122` o `RT-000121`.
-- **WF-02, resultado:** aparece después de consultar uno de esos códigos.
-- **WF-03, historial:** usa **Ver historial** en el resultado y **Volver** para regresar.
-- **WF-04, login técnico:** desde la consulta, selecciona **Iniciar sesión técnico**. Credenciales: usuario `tecnico`, contraseña `galatech`.
-- **WF-05, panel técnico:** aparece al iniciar sesión; usa la tabla para consultar servicios y el botón de registro para crear uno.
-- **WF-06, registrar reparación:** elige buscar un cliente por teléfono/correo o registrar uno nuevo, completa el equipo y registra.
-- **WF-07, gestionar reparación:** desde la tabla del panel selecciona **Gestionar**, actualiza estado, diagnóstico o costo y guarda.
+## Qué incluye esta versión
 
-El cliente no inicia sesión: su acceso es la consulta por código de seguimiento, como indica el documento.
+Las pantallas permiten consultar una reparación, ver su historial y probar las tareas principales del técnico: buscar o registrar un cliente, ingresar un equipo y actualizar el estado, diagnóstico y costo.
 
-Las reparaciones de demostración y las creadas desde el formulario se guardan en `localStorage` en el navegador actual. El inicio de sesión es una simulación local, no proporciona autenticación real. Al conectar el backend, estas operaciones deberán reemplazarse por llamadas a la API REST y el acceso técnico deberá protegerse desde el servidor.
+Los datos de ejemplo y las reparaciones que registres se guardan en el almacenamiento local del navegador. El inicio de sesión también es solo una simulación. La conexión con la API Spring Boot y la base de datos PostgreSQL de Supabase se realizará en la siguiente etapa del proyecto.
 
-## Archivos
-
-- `index.html`: punto de entrada y estructura inicial.
-- `styles.css`: identidad visual y estilos responsive.
-- `app.js`: navegación, formularios, validación e interacción de demostración.
+La interfaz está construida con HTML, CSS y JavaScript, y se adapta a pantallas de escritorio y móviles.
