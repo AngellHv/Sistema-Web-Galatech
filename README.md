@@ -2,7 +2,7 @@
 
 GALATECH es un sistema web para registrar las reparaciones que recibe un servicio técnico y permitir que los clientes consulten cómo va su equipo con un código de seguimiento. Este proyecto corresponde al frontend del sistema, preparado a partir de los wireframes del informe.
 
-## Para probar la interfaz
+## Cómo abrir el proyecto
 
 Abre `index.html` en el navegador. No hace falta instalar nada.
 
