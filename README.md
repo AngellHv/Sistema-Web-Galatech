@@ -1,19 +1,17 @@
 # GALATECH
 
-GALATECH es un sistema web para registrar las reparaciones que recibe un servicio técnico y permitir que los clientes consulten cómo va su equipo con un código de seguimiento. Este proyecto corresponde al frontend del sistema, preparado a partir de los wireframes del informe.
+GALATECH es una propuesta de sistema web para llevar el control de los equipos que ingresan a reparación y que los clientes puedan consultar su avance con un código. El frontend se desarrolló tomando como referencia los wireframes del informe del proyecto.
 
-## Cómo abrir el proyecto
+## Recorrido de la aplicación
 
-Abre `index.html` en el navegador. No hace falta instalar nada.
+La pantalla de inicio es para el cliente. Al ingresar un código puede ver el estado de la reparación y las fechas de sus cambios. Por ejemplo, `RT-000124` corresponde a una Lenovo IdeaPad 3 con un problema de batería; los códigos `RT-000123`, `RT-000122` y `RT-000121` muestran otros casos.
 
-En la pantalla de consulta puedes probar con `RT-000124`, `RT-000123`, `RT-000122` o `RT-000121`. Desde el resultado también puedes ver el historial de estados.
+El técnico entra desde **Iniciar sesión técnico**. Para acceder a este prototipo, usa el usuario `tecnico` y la contraseña `galatech`. En el panel puede buscar una reparación, registrar un equipo recibido o gestionar un servicio existente. También se puede ingresar información distinta en el formulario de registro; el sistema genera un código para la nueva reparación.
 
-Para entrar como técnico, selecciona **Iniciar sesión técnico**. En esta versión de demostración, el usuario es `tecnico` y la contraseña es `galatech`. Desde el panel puedes revisar los servicios, registrar una reparación o gestionar una existente.
+Para abrir el proyecto, inicia `index.html` en un navegador.
 
-## Qué incluye esta versión
+## Avance actual
 
-Las pantallas permiten consultar una reparación, ver su historial y probar las tareas principales del técnico: buscar o registrar un cliente, ingresar un equipo y actualizar el estado, diagnóstico y costo.
+Esta entrega contiene las pantallas de consulta, historial, acceso técnico, panel, registro y gestión de reparaciones. Los registros de ejemplo y los nuevos se guardan en el almacenamiento local del navegador, y el inicio de sesión es solo una simulación.
 
-Los datos de ejemplo y las reparaciones que registres se guardan en el almacenamiento local del navegador. El inicio de sesión también es solo una simulación. La conexión con la API Spring Boot y la base de datos PostgreSQL de Supabase se realizará en la siguiente etapa del proyecto.
-
-La interfaz está construida con HTML, CSS y JavaScript, y se adapta a pantallas de escritorio y móviles.
+La interfaz está hecha con HTML, CSS y JavaScript. La API REST con Spring Boot y la base de datos PostgreSQL en Supabase, descritas en el informe, corresponden al backend que se desarrollará en la siguiente etapa.
